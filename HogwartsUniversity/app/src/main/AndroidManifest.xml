@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.hogwartsuniversity">
+
+    <application
+        android:name=".DataClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HogwartsUniversity">
+        <activity
+            android:name=".RegsiteredData"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationDrawer"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".DashBoard"
+            android:exported="false"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".FacultyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".StudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyRegistrationEducation"
+            android:exported="false"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name=".FacultyRegistrationJob"
+            android:exported="false"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".FacultyRegistrationContact"
+            android:exported="false"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name=".FacultyRegistrationPersonal"
+            android:exported="false"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name=".StudentRegistrationParent"
+            android:exported="false"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name=".StudentRegistrationCourse"
+            android:exported="false"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".StudentRegistrationEducation"
+            android:exported="false"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name=".StudentRegistrationContact"
+            android:exported="false"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name=".StudentRegistration"
+            android:exported="false"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

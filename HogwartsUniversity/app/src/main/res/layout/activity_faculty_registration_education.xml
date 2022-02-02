@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyRegistrationEducation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/lbl_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Faculty Registration Form"
+            android:textColor="@color/bluebg"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lbl_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="100dp"
+            android:text="Educational Details"
+            android:textColor="@color/bluebg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lbl_university"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="170dp"
+            android:text="University Name :"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg" />
+
+        <EditText
+            android:id="@+id/txt_university"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="160dp"
+            android:hint="Enter university name"
+            android:textSize="18sp"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lbl_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="225dp"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp"
+            android:text="Degree" />
+
+        <EditText
+            android:id="@+id/txt_degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="215dp"
+            android:textSize="18sp"
+            android:hint="Enter degree" />
+
+        <TextView
+            android:id="@+id/lbl_passed_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="275dp"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp"
+            android:text="Graduated Year" />
+
+        <EditText
+            android:id="@+id/txt_passed_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="265dp"
+            android:hint="Enter graduated year"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lbl_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="325dp"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp"
+            android:text="Percentage Obatined" />
+
+        <EditText
+            android:id="@+id/txt_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="315dp"
+            android:hint="Enter percentage"
+            android:textSize="18sp"
+            android:inputType="number" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Previous"
+            android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

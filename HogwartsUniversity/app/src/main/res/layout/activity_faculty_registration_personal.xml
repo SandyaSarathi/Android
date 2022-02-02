@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyRegistrationPersonal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/lbl_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Faculty Registration Form"
+            android:textColor="@color/bluebg"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lbl_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="100dp"
+            android:text="Personal Details"
+            android:textColor="@color/bluebg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lbl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:text="First Name :"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg" />
+
+        <EditText
+            android:id="@+id/txt_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="170dp"
+            android:hint="Enter firstname"
+            android:textSize="18sp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lbl_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="240dp"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg"
+            android:text="Last Name :" />
+
+        <EditText
+            android:id="@+id/txt_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="230dp"
+            android:hint="Enter Last name"
+            android:textSize="18sp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lbl_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp"
+            android:layout_marginTop="300dp"
+            android:text="Gender :" />
+
+        <RadioGroup
+            android:id="@+id/radio_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="290dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_btn_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="18sp"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lbl_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="350dp"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp"
+            android:text="Date Of Birth :" />
+
+        <EditText
+            android:id="@+id/txt_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="340dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:hint="Enter Birth date"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="430dp"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="430dp"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

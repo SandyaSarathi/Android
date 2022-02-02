@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegistrationEducation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/lbl_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Student Registration Form"
+            android:textColor="@color/bluebg"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lbl_educational"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="100dp"
+            android:text="Educational Details"
+            android:textColor="@color/bluebg"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/lbl_percent_ssc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="170dp"
+            android:text="Percentage in 10th"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_percent_ssc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="160dp"
+            android:hint=" Enter 10th percent"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/lbl_ssc_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="225dp"
+            android:text="School Name :"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_ssc_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="215dp"
+            android:hint=" Enter school name"
+            android:textColor="@color/black"
+             />
+
+        <TextView
+            android:id="@+id/lbl_ssc_completed_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="275dp"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg"
+            android:text="Completed Year:" />
+
+        <EditText
+            android:id="@+id/txt_ssc_completed_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="265dp"
+            android:hint="Enter passed year"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:id="@+id/lbl_percent_hsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="325dp"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg"
+            android:text="Percentage in 12th :" />
+
+        <EditText
+            android:id="@+id/txt_percent_hsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="315dp"
+            android:hint="Enter 12th percent"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/lbl_hsc_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg"
+            android:layout_marginTop="375dp"
+            android:text="School Name :" />
+
+        <EditText
+            android:id="@+id/txt_hsc_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="365dp"
+            android:hint="Enter school name"
+            />
+
+        <TextView
+            android:id="@+id/lbl_hsc_completed_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="425dp"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg"
+            android:text="Completed Year:" />
+
+        <EditText
+            android:id="@+id/txt_hsc_completed_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="415dp"
+            android:maxLength="4"
+            android:hint="Enter 12th passed year"
+            android:inputType="number" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="510dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+
+            android:text="Next"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Previous"
+            android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

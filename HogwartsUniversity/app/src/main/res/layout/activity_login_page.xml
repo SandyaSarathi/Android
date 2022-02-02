@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/rlayout_login">
+
+        <TextView
+            android:id="@+id/lbl_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:text="Login"
+            android:textColor="@color/bluebg"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/lbl_user_mail"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="150dp"
+            android:text="Mail Id :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="OnClick" />
+
+        <EditText
+            android:id="@+id/txt_user_mail"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="150dp" />
+
+        <TextView
+            android:id="@+id/lbl_password"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="220dp"
+            android:text="Password :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="220dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="300dp"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/lbl_reset_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="370dp"
+            android:text="Reset Password?"
+            android:textColor="@color/link_color_blue" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/rlayout_reset_pwd">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/lbl_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="40dp"
+                android:text="Reset Password"
+                android:textColor="@color/bluebg"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_user_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Mail Id :"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:id="@+id/txt_mail"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:hint="Enter Mail Id" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Submit" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlayout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="New Password :"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:id="@+id/txt_new_password"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:hint="Enter new password" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="60dp"
+                        android:text="Confirm Password :"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:id="@+id/txt_confirm_password"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="50dp"
+                        android:hint="Renter new password" />
+
+                    <Button
+                        android:id="@+id/btn_change_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Change Password" />
+
+                </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

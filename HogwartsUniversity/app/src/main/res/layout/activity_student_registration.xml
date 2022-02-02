@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegistration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_register"
+        android:text="Student Registration Form"
+        android:textSize="30sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/bluebg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:layout_marginTop="100dp"
+            android:id="@+id/lbl_personal"
+            android:textSize="25sp"
+            android:textColor="@color/bluebg"
+            android:layout_marginLeft="130dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp">
+
+            <TextView
+                android:id="@+id/lbl_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="First Name :"
+                android:textColor="@color/bluebg"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:hint="Enter firstname"
+                android:inputType="textPersonName"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp">
+
+        <TextView
+            android:id="@+id/lbl_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Last Name :"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="textPersonName"
+            android:id="@+id/txt_lname"
+            android:layout_marginLeft="170dp"
+            android:hint="Enter Last name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp">
+
+        <TextView
+            android:id="@+id/lbl_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Gender :"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp" />
+        <RadioGroup
+            android:id="@+id/radio_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:textColor="@color/bluebg"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="15sp"
+                android:checked="true"
+                android:textColor="@color/bluebg"
+                android:id="@+id/radio_btn_male" />
+            <RadioButton
+                android:id="@+id/radio_btn_female"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/bluebg"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp">
+
+        <TextView
+            android:id="@+id/lbl_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Date Of Birth :"
+            android:textColor="@color/bluebg"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="170dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Enter Birth date"
+            android:inputType="number" />
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="400dp"
+            android:text="Next"
+            android:textColor="@color/white" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel"
+            android:textColor="@color/white"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="40dp"
+            android:text="Cancel"/>
+    </RelativeLayout>
+
+</ScrollView>

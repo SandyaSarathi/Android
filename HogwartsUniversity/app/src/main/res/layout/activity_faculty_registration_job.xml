@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyRegistrationJob">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/lbl_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Faculty Registration Form"
+            android:textColor="@color/bluebg"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lbl_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="100dp"
+            android:text="Job Details"
+            android:textColor="@color/bluebg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lbl_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="170dp"
+            android:text="Status :"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg" />
+
+        <RadioGroup
+            android:id="@+id/radio_type_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="160dp"
+            android:textColor="@color/bluebg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_btn_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Active" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_in_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="In Active" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lbl_job_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="225dp"
+            android:text="Job Type :"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg" />
+
+        <Spinner
+            android:id="@+id/spinner_job_type"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="225dp" />
+
+        <TextView
+            android:id="@+id/lbl_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="275dp"
+            android:text="Designation"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg" />
+
+        <Spinner
+            android:id="@+id/spinner_designation"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="275dp" />
+
+        <TextView
+            android:id="@+id/lbl_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="325dp"
+            android:textSize="18sp"
+            android:textColor="@color/bluebg"
+            android:text="Department" />
+
+        <Spinner
+            android:id="@+id/spinner_department"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="325dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_layout"
+            android:layout_marginTop="375dp">
+
+            <TextView
+                android:id="@+id/lbl_joined_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/bluebg"
+                android:textSize="18sp"
+                android:text="Date Of joining :" />
+
+            <EditText
+                android:id="@+id/txt_joined_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textSize="18sp"
+                android:hint="Enter joined date" />
+
+            <TextView
+                android:id="@+id/lbl_expirience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="75dp"
+                android:text="Total Expirience :"
+                android:textSize="18sp"
+                android:textColor="@color/bluebg" />
+
+            <EditText
+                android:id="@+id/txt_expirience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="65dp"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:hint="Enter expirience in years" />
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="125dp"
+                android:text="Next"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="125dp"
+                android:text="Cancel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="125dp"
+                android:text="Previous"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
